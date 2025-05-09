@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main(void)
+{
+    int o, se, sa, su, k, r;
+    scanf("%d %d %d %d %d", &o, &se, &sa, &su, &k);
+    if (o < 40)
+        o = 40;
+    if (se < 40)
+        se = 40;
+    if (sa < 40)
+        sa = 40;
+    if (su < 40)
+        su = 40;
+    if (k < 40)
+        k = 40;
+    r = (o + se + sa + su + k) / 5;
+    printf("%d", r);
+    return 0;
+}
